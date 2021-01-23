@@ -11,7 +11,7 @@ public class MainController {
     @GetMapping("/")
     public ResponseEntity sayHello() {
       //  return "order overzicht";
-        return new ResponseEntity("Hello from Spring JPA apploication demo", HttpStatus.OK);
+        return new ResponseEntity("Hello from wilco's application", HttpStatus.OK);
     }
 
 
