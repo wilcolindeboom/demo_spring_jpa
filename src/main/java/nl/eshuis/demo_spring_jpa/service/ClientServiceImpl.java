@@ -42,10 +42,10 @@ public class ClientServiceImpl implements ClientService {
         clientRepository.save(existingClient);
     }
 
-//    @Override
-//    public Client getClientByLastName(String lastName) {
-//        return clientRepository.FindByLastName(lastName);
-//    }
+    @Override
+    public Client getClientByLastName(String lastName) {
+        return clientRepository.findByLastNameIgnoreCase(lastName);
+    }
 
 
 }
